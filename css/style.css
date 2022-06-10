@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Press+Start+2P&display=swap');
+body{
+    background-color: #cb8985;
+}
+h2{
+    text-align: center;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 20px;
+    color: #232c33;
+}
+h4{
+    margin: auto;
+    text-align: center;
+    font-family: "Blinker", sans-serif;
+    font-size: 15px;
+    color: #232c33;
+}
+button{
+    font-family: "Press Start 2P";
+    font-size: 8px;
+    background-color: #edf0da;
+}
+div{
+    text-align: center;
+}
+#container{
+margin: auto;
+text-align: center;
+}
+img{
+    height: 475px;
+    width: 350px;
+    border: 5px #721817;
+    border-style: dashed solid;
+}

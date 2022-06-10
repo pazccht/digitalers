@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>random outfit generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <script>
+    //palette
+    //color ="New York Pink" hex="cb8985" r="203" g="137" b="133"
+    //color="Persian Plum" hex="721817" r="114" g="24" b="23"
+    //color="Gunmetal" hex="232c33" r="35" g="44" b="51"
+    //color="Beige" hex="edf0da" r="237" g="240" b="218"
+    function getRandomImage() {
+      var randomImage = new Array();
+
+      randomImage[0] = "https://i.pinimg.com/564x/64/cd/72/64cd72d57aee8a276864d3e5653f8bb5.jpg";
+      randomImage[1] = "https://i.pinimg.com/564x/a5/81/8f/a5818f98d4c5a3734a1f3554096838fd.jpg";
+      randomImage[2] = "https://i.pinimg.com/564x/75/eb/6f/75eb6f05186653defe421dd792bcc522.jpg";
+      randomImage[3] = "https://i.pinimg.com/564x/38/ff/93/38ff93b5c4f4e83c8abcc37155538dfa.jpg";
+      randomImage[4] = "https://i.pinimg.com/564x/05/8e/2d/058e2d3ef392f950ae1c680bd7f8d8a7.jpg";
+      randomImage[5] = "https://i.pinimg.com/564x/9e/5f/39/9e5f39f944631161db644c6966940d00.jpg";
+      randomImage[6] = "https://i.pinimg.com/564x/a9/1f/17/a91f1712c59a5fc3deca7111c651b983.jpg";
+      randomImage[7] = "https://i.pinimg.com/564x/aa/d9/9c/aad99cc1bc4b593e7da1db10bd2574ba.jpg";
+      randomImage[8] = "https://i.pinimg.com/564x/a9/3a/dd/a93add0e6f5037e4e4d6cc9dfd7c5fdb.jpg";
+      randomImage[9] = "https://i.pinimg.com/564x/c5/9e/dc/c59edcc6144614a3750cb4ba57700367.jpg";
+      randomImage[10] = "https://i.pinimg.com/564x/32/e8/89/32e889e32823ebe9af433daf23ab58d2.jpg";
+      randomImage[11] = "https://i.pinimg.com/564x/65/39/a5/6539a506878749ee9c9a77425d31b785.jpg";
+      randomImage[12] = "https://i.pinimg.com/564x/49/3a/3f/493a3fbb9f8fcb1187b3a547553d4dff.jpg";
+      randomImage[13] = "https://i.pinimg.com/564x/7f/ac/31/7fac31fc25829a2699980ede5ff58676.jpg";
+
+      var number = Math.floor(Math.random() * randomImage.length);
+
+      return (document.getElementById("result").innerHTML =
+        '<img src="' + randomImage[number] + '" />');
+    }
+  </script>
+  <body>
+    <h2>random outfit generator</h2>
+    <h4>hace click para recibir outfit inspo</h4>
+    <div><button onclick="getRandomImage()">generate outfit</button></div>
+    <br/>
+    <div class="container"><span id="result"> </span></div>
+  </body>
+</html>
